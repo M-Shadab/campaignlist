@@ -32,9 +32,8 @@ const Home = () => {
       if (activeTab === "live") {
         return item.createdOn === Date.now() && item
       }
-      if (activeTab === "past") {
-        return item.createdOn < Date.now() && item
-      }
+      // if (activeTab === "past")
+      return item.createdOn < Date.now() && item
     })
 
     return (
